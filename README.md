@@ -61,4 +61,22 @@ Define env variables that will be used in main.tf
   TF_VAR_metal_auth_token
 
 # Step by Step LAB run
+## 1.- Install terraform and git commands
+## 2.- Download the lab from github repository
+'git clone https://github.com/itnachol/Metal-2sites-connected.git'
+'cd Metal-2sites-connected'
+## 3.- Edit your variables with the values of your choice
+'nano terraform.tfvars'
+## 4.- Initialize terraform environment
+'terraform init'
+## 5.- Run the terraform script applying the configuration defined in main.tf
+'terraform apply'
+## 6.- Review your output where you can find your servers info, IP addresses, names, etc.
+## 7.- Loging into one of your servers for running all your tests desired
+'ssh -i <ssh-private-key-file> root@<ip-address>'
+## 8.- Once your tests are finished destroy the lab
+'terraform destroy'
+
+# Hope you've learned and enjoy this lab
+
 

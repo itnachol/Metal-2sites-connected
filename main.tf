@@ -30,8 +30,8 @@ resource "equinix_metal_vlan" "vlans_B" {
 
 # Create Server A
 resource "equinix_metal_device" "server_A" {
-  hostname         = "ServerA"
-  description      = "Server A"
+  hostname         = var.server_a_name
+  description      = var.server_a_name
   behavior {
               allow_changes = [
                 "custom_data",
@@ -59,8 +59,8 @@ resource "equinix_metal_port_vlan_attachment" "sA_vlan-att" {
 
 # Create Server B
 resource "equinix_metal_device" "server_B" {
-  hostname         = "ServerB"
-  description      = "Server B"
+  hostname         = var.server_b_name
+  description      = var.server_b_name
   behavior {
               allow_changes = [
                 "custom_data",

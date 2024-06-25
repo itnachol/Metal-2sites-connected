@@ -32,6 +32,18 @@ variable "metro_b" {
   default     = "fr"
 }
 
+variable "server_a_name" {
+  description = "This is the host and Metal name for your server in the location A"
+  type        = string
+  default     = "server_a"
+}
+
+variable "server_b_name" {
+  description = "This is the host and Metal name for your server in the location B"
+  type        = string
+  default     = "server_b"
+}
+
 variable "billing_cycle" {
   description = "This is billing cycle to use. The hasn't beend built to allow reserved isntances yet."
   type        = string
@@ -50,7 +62,7 @@ variable "vlans" {
 variable "operating_system" {
   description = "This is operating system for the servers"
   type        = string
-  default     = "windows_2022"
+  default     = "ubuntu_22_04"
 }
 
 variable "server_plan" {
