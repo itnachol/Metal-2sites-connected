@@ -22,6 +22,7 @@ for easily test latencies between the two sites. Connectivity will use Metal Bac
 | <a name="requirement_equinix"></a> [equinix](#requirement\_equinix) | >= 1.35.0 |
 
 Terraform install: https://developer.hashicorp.com/terraform/install
+
 Git install: https://github.com/git-guides/install-git
 
 ## Providers
@@ -40,8 +41,8 @@ Git install: https://github.com/git-guides/install-git
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_example_auth_token"></a> [example\_auth\_token](#input\_example\_auth\_token) | The example auth token value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
-| <a name="input_example_project_id"></a> [example\_project\_id](#input\_example\_project\_id) | The example project id value defines what will be included in the example resource in main.tf. This example is descriptive. | `string` | n/a | yes |
+| metal_project_id | The Metal Project ID where you'll be deploying this LAB. | `string` | n/a | yes |
+| metal_auth_token | User/Project Metal credentiasl (API authoritation token) | `string` | n/a | yes |
 
 ## Outputs
 
@@ -58,3 +59,6 @@ Git install: https://github.com/git-guides/install-git
 Define env variables that will be used in main.tf
   TF_VAR_metal_project_id
   TF_VAR_metal_auth_token
+
+# Step by Step LAB run
+
