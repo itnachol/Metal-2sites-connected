@@ -51,9 +51,10 @@ resource "equinix_metal_device_network_type" "sA_bond0" {
   type      = "hybrid"
 }
 resource "equinix_metal_port_vlan_attachment" "sA_vlan-att" {
+  count     = length(var.vlans)
   device_id = equinix_metal_device_network_type.sA_bond0.id
   port_name = "bond0"
-  vlan_vnid = equinix_metal_vlan.vlans[0].vxlan
+  vlan_vnid = equinix_metal_vlan.vlans_A[count.index].vxlan
 }
 
 # Create Server B
@@ -79,7 +80,8 @@ resource "equinix_metal_device_network_type" "sb_bond0" {
   type      = "hybrid"
 }
 resource "equinix_metal_port_vlan_attachment" "sb_vlan-att" {
-  device_id = equinix_metal_device_network_type.sB_bond0.id
+  count     = length(var.vlans)
+  device_id = equinix_metal_device_network_type.sb_bond0.id
   port_name = "bond0"
-  vlan_vnid = equinix_metal_vlan.vlans[0].vxlan
+  vlan_vnid = equinix_metal_vlan.vlans_B[count.index].vxlan
 }

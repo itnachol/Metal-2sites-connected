@@ -38,33 +38,3 @@ output "server_b" {
     }
   }
 
-output "Metal_service_tokens" {
-  description = "Metal service tokens"
-  value       = equinix_metal_connection.metal_vc_connection.service_tokens
-}
-
-output "Metal_Connection" {
-  description = "Metal Connections"
-  value       = equinix_metal_connection.metal_vc_connection
-} 
-
-output "Metal_2_Azure_EVPL_VCs" {
-  description = "Metal to Azure EVPL_VCs"
-  value       = [equinix_fabric_connection.vc_to_azure_pri, equinix_fabric_connection.vc_to_azure_sec]
-}
-
-# output "nni" {
-#   description = "nni_pri"
-#   value = [[for s in equinix_fabric_connection.vc_to_azure_pri.a_side : [for ap in s.access_point : [for lp in ap.link_protocol : lp.vlan_tag if lp.vlan_tag != null] if length(ap.link_protocol) > 0] if length(s.access_point) > 0][0][0][0]]
-# }
-
-output "Metal_VC_pri" {
-  description = "Metal Virtual Circuit primary"
-  value = data.equinix_metal_virtual_circuit.metal_vc_pri
-  sensitive = true
-}
-output "Metal_VC_sec" {
-  description = "Metal Virtual Circuit secondary"
-  value = data.equinix_metal_virtual_circuit.metal_vc_sec
-  sensitive = true
-}

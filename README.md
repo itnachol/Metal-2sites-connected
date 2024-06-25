@@ -1,4 +1,4 @@
-# Metal VRF LAB
+# Metal 2 sites connected
 
 <!-- TEMPLATE: Review all "TEMPLATE" comments and remove them when applied. -->
 <!-- TEMPLATE: replace "template" with the name of your project. The prefix "terraform-equinix-" informs the Terraform registry that this project is a Terraform module associated with the Equinix provider, preserve this prefix. -->
@@ -49,12 +49,7 @@ for easily test latencies between the two sites. Connectivity will use Metal Bac
 <!-- END_TF_DOCS -->
 ## Contributing
 
-If you would like to contribute to this module, see [CONTRIBUTING](CONTRIBUTING.md) page.
-
 ## License
-
-Apache License, Version 2.0. See [LICENSE](LICENSE).
-<!-- TEMPLATE: Expand this section with any additional information or requirements. -->
 
 ## Environment Variables
 Define env variables that will be used in main.tf
