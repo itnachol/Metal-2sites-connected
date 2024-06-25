@@ -18,23 +18,23 @@
 
 output "server_a" {
     description = "Attributes of Server A"
-    sensitive   = true
+#    sensitive   = true
     value = {
       id             = equinix_metal_device.server_A.id
       hostname       = equinix_metal_device.server_A.hostname
       ip_addresses   = equinix_metal_device.server_A.access_public_ipv4
-      root_password  = equinix_metal_device.server_A.root_password
+#      root_password  = equinix_metal_device.server_A.root_password
     }
   }
 
 output "server_b" {
     description = "Attributes of Server B"
-    sensitive   = true
+#    sensitive   = true
     value = {
       id             = equinix_metal_device.server_B.id
       hostname       = equinix_metal_device.server_B.hostname
       ip_addresses   = equinix_metal_device.server_B.access_public_ipv4
-      root_password  = equinix_metal_device.server_B.root_password
+#      root_password  = equinix_metal_device.server_B.root_password
     }
   }
 
