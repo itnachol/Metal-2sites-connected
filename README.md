@@ -63,8 +63,8 @@ Define env variables that will be used in main.tf
 # Step by Step LAB run
 ### 1.- Install terraform and git commands
 ### 2.- Download the lab from github repository
-`git clone https://github.com/itnachol/Metal-2sites-connected.git`
-`cd Metal-2sites-connected`
+`git clone https://github.com/itnachol/Metal-2sites-connected.git
+cd Metal-2sites-connected`
 ### 3.- Edit your variables with the values of your choice
 `nano terraform.tfvars`
 ### 4.- Initialize terraform environment
