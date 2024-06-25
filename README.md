@@ -22,6 +22,7 @@ for easily test latencies between the two sites. Connectivity will use Metal Bac
 | <a name="requirement_equinix"></a> [equinix](#requirement\_equinix) | >= 1.35.0 |
 
 Terraform install: https://developer.hashicorp.com/terraform/install
+
 Git install: https://github.com/git-guides/install-git
 
 ## Providers
