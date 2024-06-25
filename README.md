@@ -67,7 +67,7 @@ Define env variables that will be used in main.tf
 git clone https://github.com/itnachol/Metal-2sites-connected.git
 cd Metal-2sites-connected
 ```
-### 3.- Edit your variables with the values of your choice
+### 3.- Edit your variables with the values of your choice. "metal_project_id" and "metal_auth_token" are mandatory
 `nano terraform.tfvars`
 ### 4.- Initialize terraform environment
 `terraform init`
@@ -79,6 +79,6 @@ cd Metal-2sites-connected
 ### 8.- Once your tests are finished destroy the lab
 `terraform destroy`
 
-# Hope you've learned and enjoy this lab
+# Hope you've learned and enjoyed this lab
 
 
